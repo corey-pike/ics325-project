@@ -1,0 +1,103 @@
+body {
+  background-color: white;
+}
+h1 {
+  color: whitesmoke;
+}
+ul, li {
+  list-style: none;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#menu {
+  width: 125px;
+  padding-top: 78px;
+}
+#menu a {
+  background-color: #cdc0b0;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+}
+#menu a:hover {
+  background-color: #ccc;
+}
+#footer {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(90deg, rgba(98,2,2,1) 30%, rgba(5,0,0,1) 90%);
+	position: absolute;
+	bottom: 0;
+}
+.footGrid{
+  display: grid;
+  height: 90px;
+  font-size: 30px;
+  color: whitesmoke;
+}
+.gridleft{
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+.gridmid{
+	display: flex;
+  align-items: center;
+}
+.gridright{
+	display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+#buttons{
+	float: right;
+}
+#header {
+	margin: auto;
+	width: 100%;
+	height: 90px;
+	background-color: black;
+	position: static;
+}
+.headerTitle {
+	color: whitesmoke;
+	text-align: center;
+	font-size: 40px;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.content {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  padding: 0px 10px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
